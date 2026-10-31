@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>🌤️ Weather Forecast</h1>
+
+    <form id="search-form" class="search">
+      <input type="text" id="city-input" placeholder="Search a city, e.g. Chandigarh" autocomplete="off" required>
+      <button type="submit">Search</button>
+      <button type="button" id="location-btn" title="Use my current location">📍</button>
+    </form>
+
+    <div class="unit-toggle">
+      <button id="unit-c" class="active" type="button">°C</button>
+      <button id="unit-f" type="button">°F</button>
+    </div>
+
+    <p id="message" class="message" hidden></p>
+
+    <section id="current" class="card current" hidden>
+      <div class="current-top">
+        <div>
+          <h2 id="city-name"></h2>
+          <p id="date-text"></p>
+        </div>
+        <div class="icon" id="current-icon"></div>
+      </div>
+      <div class="temp" id="current-temp"></div>
+      <p class="desc" id="current-desc"></p>
+      <div class="details">
+        <div><span>Feels like</span><strong id="feels-like"></strong></div>
+        <div><span>Humidity</span><strong id="humidity"></strong></div>
+        <div><span>Wind</span><strong id="wind"></strong></div>
+      </div>
+    </section>
+
+    <section id="forecast-section" hidden>
+      <h3>7-Day Forecast</h3>
+      <div id="forecast" class="forecast"></div>
+    </section>
+
+    <footer>Data from <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
