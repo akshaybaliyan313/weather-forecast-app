@@ -22,21 +22,6 @@ weather-forecast-app/
 └── script.js
 ```
 
-## Getting Started
-1. Clone the repository
-   ```bash
-   git clone https://github.com/<your-username>/weather-forecast-app.git
-   ```
-2. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
-3. Add your key in `script.js`:
-   ```js
-   const API_KEY = "YOUR_API_KEY";
-   ```
-4. Open `index.html` in your browser.
-
-## Screenshots
-_Add screenshots here._
-
 ## Author
 **Akshay Baliyan**: MCA, Chandigarh University
 
